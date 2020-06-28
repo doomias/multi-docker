@@ -11,7 +11,7 @@ script:
 
 after_success:
     - docker build -t doomias/multi-client ./client
-    - docker built -t doomias/multi-nginx ./nginx
+    - docker build -t doomias/multi-nginx ./nginx
     - docker build -t doomias/multi-server ./server
     - docker build -t doomias/multi-worker ./worker
     #Log in to the docker CLI
